@@ -1,0 +1,53 @@
+{
+	"name": "The Not Quiz",
+	"short_name": "The Not Quiz",
+	"start_url": "https://thenotquiz.com",
+	"display": "standalone",
+	"orientation": "portrait",
+	"background_color": "#7336b5",
+	"theme_color": "#7336b5",
+	"icons": [
+		{
+			"src": "https://thenotquiz.com/icon.svg",
+			"type": "image/svg+xml",
+			"sizes": "512x512",
+			"purpose": "any"
+		},
+		{
+			"src": "https://thenotquiz.com/icon.svg",
+			"type": "image/svg+xml",
+			"sizes": "512x512",
+			"purpose": "maskable"
+		},
+		{
+			"src": "https://thenotquiz.com/icon.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "any"
+		},
+		{
+			"src": "https://thenotquiz.com/icon.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"description": "Test your celebrity, music and film knowledge. Home to the 'Dead or Not Dead', 'Number 1 or Not Number 1' and 'Oscar or Not Oscar' quizzes",
+	"screenshots": [
+		{
+			"src": "https://thenotquiz.com/screenshot1.png",
+			"type": "image/png",
+			"sizes": "750x1334"
+		},
+		{
+			"src": "https://thenotquiz.com/screenshot2.png",
+			"type": "image/png",
+			"sizes": "750x1334"
+		},
+		{
+			"src": "https://thenotquiz.com/screenshot3.png",
+			"type": "image/png",
+			"sizes": "750x1334"
+		}
+	]
+}

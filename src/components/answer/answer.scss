@@ -1,0 +1,44 @@
+.answer {
+	&__wrapper {
+		display: grid;
+		gap: 1rem;
+		justify-items: center;
+	}
+
+	&__icon {
+		height: 2.125rem;
+		position: absolute;
+		right: 1.3rem;
+		top: calc(50% - 1rem);
+		width: 2.125rem;
+
+		&_small {
+			height: 1rem;
+			right: 0.75rem;
+			top: calc(50% - 0.5rem);
+			width: 1rem;
+		}
+	}
+
+	&__group {
+		display: grid;
+		width: 100%;
+
+		& > * {
+			grid-area: 1 / 1;
+		}
+	}
+
+	&__subgroup {
+		justify-self: center;
+		max-width: 17rem;
+		width: 100%;
+
+		&-items {
+			display: grid;
+			gap: 0.45rem 0.35rem;
+			grid-template: 1fr 1fr / 1fr 1fr;
+			height: 5rem;
+		}
+	}
+}

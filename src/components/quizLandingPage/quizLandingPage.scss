@@ -1,0 +1,18 @@
+.quiz-landing {
+	align-self: center;
+	justify-self: center;
+
+	&__desc {
+		font-size: 0.825rem;
+		font-weight: 300;
+		line-height: 1.1rem;
+		margin: 1rem 0 2rem;
+		width: 19rem;
+	}
+
+	&__btn {
+		margin: auto;
+		max-width: 12rem;
+		min-height: 3.4rem;
+	}
+}

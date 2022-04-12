@@ -1,0 +1,55 @@
+.question {
+	align-self: center;
+	grid-area: 1 / 1;
+
+	&__details {
+		align-content: start;
+		display: grid;
+		margin-bottom: 1.5rem;
+		min-height: 7rem;
+		outline: none;
+	}
+
+	&__heading {
+		font-size: 1.5rem;
+		font-weight: 600;
+		line-height: 1.8rem;
+
+		&_large {
+			font-size: 1.75rem;
+		}
+
+		&_tight {
+			display: block;
+		}
+
+		&_italic {
+			font-style: italic;
+		}
+	}
+
+	&__subheading {
+		display: block;
+		font-weight: 300;
+		margin-top: 0.65rem;
+
+		&_tight {
+			margin: 0;
+		}
+
+		& + & {
+			margin: 0;
+		}
+	}
+
+	// opacity: 1;
+	// pointer-events: all;
+	// transform: scale(1);
+	// transition: all var(--speed-a);
+
+	// &_in {
+	// 	opacity: 0;
+	// 	pointer-events: none;
+	// 	transform: scale(0.6);
+	// }
+}

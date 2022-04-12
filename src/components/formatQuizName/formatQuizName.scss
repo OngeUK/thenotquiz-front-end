@@ -1,0 +1,55 @@
+.quiz-name {
+	align-items: center;
+	display: flex;
+	font-weight: 300;
+	gap: 0.75rem;
+	line-height: 1;
+
+	&_large,
+	&_xlarge {
+		display: grid;
+
+		.quiz-name__icon {
+			display: block;
+			margin: auto;
+		}
+	}
+
+	&_large {
+		font-size: 1.3rem;
+
+		.quiz-name__icon {
+			height: 4rem;
+			width: 4rem;
+		}
+	}
+
+	&_xlarge {
+		font-size: 1.5rem;
+
+		.quiz-name__icon {
+			height: 5.5rem;
+			width: 5.5rem;
+		}
+	}
+
+	&__icon {
+		display: inline-block;
+		height: 1.1rem;
+		width: 1.1rem;
+	}
+
+	&__title {
+		font-weight: 700;
+	}
+
+	&:not([class*="large"]) &__or,
+	&:not([class*="large"]) &__title:last-child {
+		display: inline;
+
+		// Just show short quiz titles on small screens
+		@media only screen and (max-width: 45rem) {
+			display: none;
+		}
+	}
+}

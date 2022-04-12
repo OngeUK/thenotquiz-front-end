@@ -1,0 +1,40 @@
+.progress {
+	overflow: hidden;
+
+	&__content {
+		animation: slide-in var(--speed-b) backwards;
+		font-size: 0.9rem;
+		font-weight: 300;
+		padding: 0.75rem 0;
+		transform: translate3d(0, 0%, 0);
+		transition: all var(--speed-b);
+
+		&_offscreen {
+			animation: slide-out var(--speed-b) forwards;
+		}
+
+		strong {
+			font-weight: 600;
+		}
+	}
+}
+
+@keyframes slide-in {
+	from {
+		transform: translate3d(0, 100%, 0);
+	}
+
+	to {
+		transform: translate3d(0, 0, 0);
+	}
+}
+
+@keyframes slide-out {
+	from {
+		transform: translate3d(0, 0, 0);
+	}
+
+	to {
+		transform: translate3d(0, 100%, 0);
+	}
+}

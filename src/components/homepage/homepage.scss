@@ -1,0 +1,21 @@
+.homepage {
+	&__nav {
+		&-wrapper {
+			column-gap: 4rem;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 0;
+			row-gap: 2rem;
+		}
+
+		&-link {
+			display: block;
+
+			&:focus-visible {
+				outline: 0.2rem solid var(--light);
+				outline-offset: 0.5rem;
+			}
+		}
+	}
+}

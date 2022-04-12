@@ -1,0 +1,74 @@
+.final-score {
+	align-self: center;
+	grid-area: 1 / 1;
+
+	&__heading {
+		font-size: 1.45rem;
+		font-weight: 600;
+		margin: 0 0 0.5rem;
+	}
+
+	&__radial {
+		display: grid;
+		margin: auto;
+		width: 12rem;
+
+		&-content {
+			grid-area: 1 / 1;
+		}
+	}
+
+	&__percentage {
+		&-bar {
+			transition: all 2500ms;
+		}
+
+		&-value {
+			align-self: center;
+			font-size: 3.25rem;
+			font-weight: 600;
+			grid-area: 1 / 1;
+			transform: translate3d(0, 0, 0);
+			transition: all var(--speed-b);
+
+			&_moved {
+				transform: translate3d(0, -1.4rem, 0);
+			}
+		}
+	}
+
+	&__difference {
+		align-self: center;
+		font-size: 0.9rem;
+		font-weight: 300;
+		grid-area: 1 / 1;
+		line-height: 1rem;
+		margin: auto;
+		max-width: 7rem;
+		opacity: 0;
+		transform: translate3d(0, 3.2rem, 0);
+		transition: all var(--speed-b);
+		z-index: -1;
+
+		&_moved {
+			opacity: 1;
+			transform: translate3d(0, 1.7rem, 0);
+		}
+
+		strong {
+			font-weight: 600;
+		}
+	}
+
+	&__summary {
+		font-size: 0.95rem;
+		font-weight: 300;
+		line-height: 1.1rem;
+		margin: 2rem 0;
+	}
+
+	&__btn-wrapper {
+		margin: auto;
+		max-width: 11rem;
+	}
+}
