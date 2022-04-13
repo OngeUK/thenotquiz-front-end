@@ -26,7 +26,7 @@ const AnswerIcon = (props: IProps) => {
 						fill="none"
 						d="M1.5 15.2L12 24.8 29.2 1.5"
 						style={{
-							transition: "stroke-dasharray 360ms 200ms, opacity 1ms 200ms",
+							transition: "stroke-dasharray 410ms 250ms, opacity 1ms 200ms",
 							strokeDasharray: strokevalue,
 							stroke: "#fff",
 							strokeWidth: 4,
@@ -46,7 +46,7 @@ const AnswerIcon = (props: IProps) => {
 					<path
 						d="M3.3,1.8l24.6,24.6"
 						style={{
-							transition: "stroke-dasharray 270ms 290ms",
+							transition: "stroke-dasharray 320ms 340ms",
 							strokeDasharray: strokevalue,
 							stroke: "#fff",
 							strokeWidth: 4,
@@ -55,7 +55,7 @@ const AnswerIcon = (props: IProps) => {
 					<path
 						d="M27.9,1.8L3.3,26.4"
 						style={{
-							transition: "stroke-dasharray 270ms 200ms",
+							transition: "stroke-dasharray 320ms 250ms",
 							strokeDasharray: strokevalue,
 							stroke: "#fff",
 							strokeWidth: 4,

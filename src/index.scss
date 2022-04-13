@@ -10,8 +10,9 @@
 	--dark: #000;
 
 	// Animation speeds
-	--speed-a: 300ms;
-	--speed-b: 400ms;
+	--speed-a: 600ms;
+	--speed-b: 800ms;
+	--speed-c: 300ms;
 }
 
 body {
@@ -20,7 +21,7 @@ body {
 	height: 100%;
 	margin: 0;
 	overflow-x: hidden;
-	transition: background var(--speed-a);
+	transition: background var(--speed-c);
 }
 
 a,
@@ -85,7 +86,6 @@ legend {
 }
 
 .animate-out {
-	// animation: name duration timing-function delay iteration-count direction fill-mode;
 	animation: out var(--speed-a) forwards;
 	pointer-events: none;
 	transform: unset;
@@ -110,7 +110,7 @@ legend {
 }
 
 .loader {
-	animation: rotate calc(var(--speed-b) * 3.5) forwards linear infinite;
+	animation: rotate calc(var(--speed-b) * 1.5) forwards linear infinite;
 	box-sizing: border-box;
 	height: 3.4rem;
 	margin: auto;

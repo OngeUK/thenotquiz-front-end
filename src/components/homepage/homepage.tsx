@@ -1,4 +1,5 @@
 import quizDetails, { IQuizDetails } from "./../../utils/quizDetails";
+import "./../button/button.scss";
 import FormatQuizName from "./../formatQuizName/formatQuizName";
 import "./homepage.scss";
 
@@ -13,6 +14,9 @@ const Homepage = () => (
 							<a class="homepage__nav-link" href={`/${quiz.path}/`}>
 								<FormatQuizName data={{ name: quiz.name, type: "large", icon: quiz.icon }} />
 								<span class="strapline">{quiz.strapline}</span>
+								<span aria-hidden class="homepage__nav-button button button_small">
+									Play quiz
+								</span>
 							</a>
 						</li>
 					);

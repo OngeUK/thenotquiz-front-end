@@ -1,6 +1,6 @@
 .button {
 	--active-btn: rgba(255, 255, 255, 1);
-	--highlight-size: 35rem;
+	--highlight-size: 35em;
 	appearance: none;
 	background-color: transparent;
 	border: 0.2rem solid rgba(255, 255, 255, 0.7);
@@ -42,7 +42,7 @@
 		opacity: 0;
 		position: absolute;
 		transform: scale(0);
-		transition: transform var(--speed-b);
+		transition: transform var(--speed-a);
 		width: var(--highlight-size);
 		z-index: -1;
 
@@ -55,6 +55,12 @@
 
 	&_active {
 		border-color: var(--active-btn);
+	}
+
+	&_small {
+		border-width: 0.15rem;
+		font-size: 0.85rem;
+		padding: 0.3rem 1rem;
 	}
 
 	&_large {

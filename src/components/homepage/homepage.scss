@@ -16,6 +16,21 @@
 				outline: 0.2rem solid var(--light);
 				outline-offset: 0.5rem;
 			}
+
+			// Mouse only
+			@media (hover: hover) and (pointer: fine) {
+				&:hover {
+					.homepage__nav-button {
+						border-color: var(--active-btn);
+					}
+				}
+			}
+		}
+
+		&-button.button {
+			display: block;
+			margin: 0.35rem auto 0;
+			width: max-content;
 		}
 	}
 }
