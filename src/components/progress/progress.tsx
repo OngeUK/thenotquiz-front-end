@@ -1,9 +1,10 @@
 import { memo } from "preact/compat";
+import { IRemainingLabel } from "../../utils/quizDetails";
 import { questionsPerQuiz } from "./../../app";
 import "./progress.scss";
 
 const Progress = (props: IProps) => {
-	const { progress } = props;
+	const { progress, remainingLabel } = props;
 	const remainingQuestions = questionsPerQuiz - progress;
 
 	return (
@@ -15,7 +16,8 @@ const Progress = (props: IProps) => {
 						: { class: "progress__content" })}
 				>
 					{/* Never show zero to the user - we'll just animate out the progress element instead */}
-					<strong>{remainingQuestions > 0 ? remainingQuestions : 1}</strong> question{remainingQuestions > 1 ? "s" : ""} remaining
+					<strong>{remainingQuestions > 0 ? remainingQuestions : 1}</strong> {remainingQuestions > 1 ? remainingLabel.plural : remainingLabel.single}{" "}
+					remaining
 				</div>
 			</article>
 		</>
@@ -26,4 +28,5 @@ export default memo(Progress);
 
 interface IProps {
 	progress: number;
+	remainingLabel: IRemainingLabel;
 }

@@ -8,6 +8,10 @@ const quizDetails: IQuizDetails[] = [
 		strapline: "Celebrity dead or alive quiz",
 		description: "Can you identify which of the following famous people are deceased and which are still alive?",
 		subQuestion: "Year died",
+		remainingLabel: {
+			single: "celebrity",
+			plural: "celebrities",
+		},
 		settings: {
 			themeColour: "#006503",
 			themeColourDark: "#004202",
@@ -28,6 +32,10 @@ const quizDetails: IQuizDetails[] = [
 		strapline: "UK chart music quiz",
 		description: "These songs all made the top 10 of the Official UK Singles Chart, but can you pick the chart-toppers?",
 		subQuestion: "Year released",
+		remainingLabel: {
+			single: "song",
+			plural: "songs",
+		},
 		settings: {
 			themeColour: "#005c90",
 			themeColourDark: "#003c5e",
@@ -50,6 +58,10 @@ const quizDetails: IQuizDetails[] = [
 		strapline: "Movie award winners quiz",
 		description: "The following were all nominated for an Academy Award, but can you pick the Oscar winners?",
 		subQuestion: "Year won",
+		remainingLabel: {
+			single: "nominee",
+			plural: "nominees",
+		},
 		settings: {
 			themeColour: "#9e01a0",
 			themeColourDark: "#670168",
@@ -75,6 +87,7 @@ export interface IQuizDetails {
 	strapline: string;
 	description: string;
 	subQuestion: string;
+	remainingLabel: IRemainingLabel;
 	settings: IQuizSettings;
 	icon: IIcon;
 }
@@ -94,4 +107,9 @@ export interface IQuizSettings {
 export interface IIcon {
 	viewBox: string;
 	path: string;
+}
+
+export interface IRemainingLabel {
+	single: string;
+	plural: string;
 }

@@ -1,4 +1,4 @@
-import { hydrate } from "preact";
+import { hydrate, render } from "preact";
 import AsyncRoute from "preact-async-route";
 import Router, { RouterOnChangeArgs } from "preact-router";
 import { useEffect, useState } from "preact/hooks";
@@ -74,7 +74,11 @@ const App = () => {
 	);
 };
 
-hydrate(<App />, document.querySelector("body")!);
+if (import.meta.env.MODE === "development") {
+	render(<App />, document.querySelector("body")!);
+} else {
+	hydrate(<App />, document.querySelector("body")!);
+}
 
 // Register service worker
 if ("serviceWorker" in navigator) {

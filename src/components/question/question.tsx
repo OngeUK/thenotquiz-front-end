@@ -70,7 +70,7 @@ const Question = (props: IProps) => {
 							// Animate out previous question
 							<QuestionTransitionOut element={questionRef.current} action={() => setIsTransitioning(false)} />
 						)}
-						<Progress progress={quizState.getProgress} />
+						<Progress progress={quizState.getProgress} remainingLabel={details.remainingLabel} />
 					</>
 				) : (
 					<>
@@ -79,7 +79,7 @@ const Question = (props: IProps) => {
 							// Animate out previous question
 							<QuestionTransitionOut element={questionRef.current} action={() => setIsTransitioning(false)} />
 						)}
-						<Progress progress={quizState.getProgress} />
+						<Progress progress={quizState.getProgress} remainingLabel={details.remainingLabel} />
 					</>
 				)}
 			</>
